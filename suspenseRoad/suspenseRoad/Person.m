@@ -15,7 +15,6 @@
     NSLog(@"调用set方法");
 }
 
-
 - (void)willChangeValueForKey:(NSString *)key{
     [super willChangeValueForKey:key];
     NSLog(@"willChangeValueForKey");
