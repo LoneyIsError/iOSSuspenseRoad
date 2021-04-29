@@ -15,6 +15,13 @@
 		21980E41255E2DD200496F3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21980E3F255E2DD200496F3F /* LaunchScreen.storyboard */; };
 		21980E44255E2DD200496F3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21980E43255E2DD200496F3F /* main.m */; };
 		21980E4C255E2F2C00496F3F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 21980E4B255E2F2C00496F3F /* Person.m */; };
+		21B27221261D7EA100410203 /* SynchronizedTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B27220261D7EA100410203 /* SynchronizedTestViewController.m */; };
+		21B27228261F23C600410203 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B27227261F23C600410203 /* KVOViewController.m */; };
+		21EC565626130514004ABE32 /* NSDictionary+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EC565526130514004ABE32 /* NSDictionary+test.m */; };
+		21F2A5AE26313D9D00283814 /* NSObject+test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2A5AD26313D9D00283814 /* NSObject+test1.m */; };
+		21F2A5B226313DAA00283814 /* NSObject+test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2A5B126313DAA00283814 /* NSObject+test2.m */; };
+		21F2A5B626313DC100283814 /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2A5B526313DC100283814 /* Worker.m */; };
+		21FF51EC2600794A00A482A4 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FF51EB2600794A00A482A4 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,21 @@
 		21980E43255E2DD200496F3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21980E4A255E2F2C00496F3F /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		21980E4B255E2F2C00496F3F /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		21B2721F261D7EA100410203 /* SynchronizedTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizedTestViewController.h; sourceTree = "<group>"; };
+		21B27220261D7EA100410203 /* SynchronizedTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynchronizedTestViewController.m; sourceTree = "<group>"; };
+		21B27226261F23C600410203 /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		21B27227261F23C600410203 /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		21EC565426130514004ABE32 /* NSDictionary+test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+test.h"; sourceTree = "<group>"; };
+		21EC565526130514004ABE32 /* NSDictionary+test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+test.m"; sourceTree = "<group>"; };
+		21F2A5AC26313D9D00283814 /* NSObject+test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+test1.h"; sourceTree = "<group>"; };
+		21F2A5AD26313D9D00283814 /* NSObject+test1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+test1.m"; sourceTree = "<group>"; };
+		21F2A5B026313DAA00283814 /* NSObject+test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+test2.h"; sourceTree = "<group>"; };
+		21F2A5B126313DAA00283814 /* NSObject+test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+test2.m"; sourceTree = "<group>"; };
+		21F2A5B426313DC100283814 /* Worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		21F2A5B526313DC100283814 /* Worker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
+		21FF51DF25FF778A00A482A4 /* ViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ViewController.cpp; sourceTree = "<group>"; };
+		21FF51EA2600794A00A482A4 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		21FF51EB2600794A00A482A4 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +92,23 @@
 				21980E35255E2DD100496F3F /* SceneDelegate.m */,
 				21980E37255E2DD100496F3F /* ViewController.h */,
 				21980E38255E2DD100496F3F /* ViewController.m */,
+				21F2A5AC26313D9D00283814 /* NSObject+test1.h */,
+				21F2A5AD26313D9D00283814 /* NSObject+test1.m */,
+				21F2A5B026313DAA00283814 /* NSObject+test2.h */,
+				21F2A5B126313DAA00283814 /* NSObject+test2.m */,
+				21B2721F261D7EA100410203 /* SynchronizedTestViewController.h */,
+				21B27220261D7EA100410203 /* SynchronizedTestViewController.m */,
+				21B27226261F23C600410203 /* KVOViewController.h */,
+				21B27227261F23C600410203 /* KVOViewController.m */,
+				21EC565426130514004ABE32 /* NSDictionary+test.h */,
+				21EC565526130514004ABE32 /* NSDictionary+test.m */,
+				21FF51DF25FF778A00A482A4 /* ViewController.cpp */,
 				21980E4A255E2F2C00496F3F /* Person.h */,
 				21980E4B255E2F2C00496F3F /* Person.m */,
+				21FF51EA2600794A00A482A4 /* Student.h */,
+				21FF51EB2600794A00A482A4 /* Student.m */,
+				21F2A5B426313DC100283814 /* Worker.h */,
+				21F2A5B526313DC100283814 /* Worker.m */,
 				21980E3A255E2DD100496F3F /* Main.storyboard */,
 				21980E3D255E2DD200496F3F /* Assets.xcassets */,
 				21980E3F255E2DD200496F3F /* LaunchScreen.storyboard */,
@@ -152,10 +189,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				21980E39255E2DD100496F3F /* ViewController.m in Sources */,
+				21F2A5B626313DC100283814 /* Worker.m in Sources */,
+				21F2A5B226313DAA00283814 /* NSObject+test2.m in Sources */,
+				21F2A5AE26313D9D00283814 /* NSObject+test1.m in Sources */,
 				21980E33255E2DD100496F3F /* AppDelegate.m in Sources */,
+				21B27228261F23C600410203 /* KVOViewController.m in Sources */,
+				21EC565626130514004ABE32 /* NSDictionary+test.m in Sources */,
 				21980E4C255E2F2C00496F3F /* Person.m in Sources */,
+				21B27221261D7EA100410203 /* SynchronizedTestViewController.m in Sources */,
 				21980E44255E2DD200496F3F /* main.m in Sources */,
 				21980E36255E2DD100496F3F /* SceneDelegate.m in Sources */,
+				21FF51EC2600794A00A482A4 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *address;
 @property (nonatomic, assign) NSInteger age;
+@property (nonatomic, copy) NSString *firstName;
+@property (nonatomic, copy) NSString *lastName;
+@property (nonatomic, copy) NSString *fullName;
+
++ (void)crow;
 
 @end
 

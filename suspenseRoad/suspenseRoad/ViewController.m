@@ -8,11 +8,14 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import "Student.h"
+#import "Worker.h"
 #import <objc/runtime.h>
 
 @interface ViewController ()
 
 @property (nonatomic, strong) Person *person;
+@property (nonatomic, strong) Student *student;
 
 @end
 
@@ -47,39 +50,55 @@ static void PrintDescription(NSString *name, id obj)
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.person = [[Person alloc] init];
-    self.person.name = @"iOS成长指北";
-    self.person.age = 1;
     
-    Person *person = [[Person alloc] init];
-    person.name = @"iOS成长指北";
-    person.age = 1;
     
+//    NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:@{@"a":@1, @"a":@2}];
+    
+//    NSMutableDictionary *mDic1 = [NSMutableDictionary dictionaryWithDictionary:@{@"a":@1, @"a":@2}];
+//    //'a': 1
+//    NSMutableDictionary *mDic2 = [NSMutableDictionary dictionary];
+//    [mDic2 setObject:@(1) forKey:@"a"];
+//    [mDic2 setObject:@(2) forKey:@"a"];
+    
+//    self.person = [[Person alloc] init];
+//    self.student = [[Student alloc] init];
+//    Worker *worker = [[Worker alloc] init];
+    
+    [Person crow];
+//
+//    NSLog(@"###########----%@", @([self.person isMemberOfClass:[Person class]]));
+//    NSLog(@"###########----%@", @([self.person isKindOfClass:[Person class]]));
+//    NSLog(@"###########----%@", @([self.student isMemberOfClass:[Person class]]));
+//    NSLog(@"###########----%@", @([self.student isKindOfClass:[Person class]]));
+//
+//    self.person.name = @"iOS成长指北";
+//    self.person.age = 1;
+
+//    Person *person = [[Person alloc] init];
+//    person.name = @"iOS成长指北";
+//    person.age = 1;
+
 //    NSLog(@"person->isa:%@", object_getClass(self.person));
 //    NSLog(@"person class:%@", [self.person class]);
 //    NSLog(@"person superclass:%@", class_getSuperclass(object_getClass(self.person)));
 //    NSLog(@"ClassMethodNames:%@", ClassMethodNames(object_getClass(self.person)));
-    PrintDescription(@"person", self.person);
-    
-    [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:@"12345"];
-    [self.person addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:@"12345"];
-    
-    PrintDescription(@"person", self.person);
-    
+//    PrintDescription(@"person", self.person);
+//
+//    [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:@"12345"];
+//    PrintDescription(@"person", self.person);
+//    [self.person addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:@"12345"];
+//    PrintDescription(@"person", self.person);
+
 //    NSLog(@"person->isa:%@", object_getClass(self.person));
 //    NSLog(@"person class:%@", [self.person class]);
 //    NSLog(@"person superclass:%@", class_getSuperclass(object_getClass(self.person)));
 //    NSLog(@"ClassMethodNames:%@", ClassMethodNames(object_getClass(self.person)));
 
-    [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:@"12345"];
-//    NSLog(@"person->isa:%@", object_getClass(self.person));
-//    NSLog(@"person class:%@", [self.person class]);
-    PrintDescription(@"person", self.person);
-    [self.person removeObserver:self forKeyPath:@"name"];
-    PrintDescription(@"person", self.person);
-    [self.person removeObserver:self forKeyPath:@"name"];
-    PrintDescription(@"person", self.person);
-    [self.person removeObserver:self forKeyPath:@"name"];
+//    [self.person removeObserver:self forKeyPath:@"name"];
+//    PrintDescription(@"person", self.person);
+//    [self.person removeObserver:self forKeyPath:@"age"];
+//    PrintDescription(@"person", self.person);
+//    [self.person removeObserver:self forKeyPath:@"name"];
     
 //    printf("Using NSObject methods, normal setName: is %p, overridden setName: is %p\n",
 //           [person methodForSelector:@selector(setName:)],
@@ -90,12 +109,13 @@ static void PrintDescription(NSString *name, id obj)
 //          method_getImplementation(class_getInstanceMethod(object_getClass(self.person),
 //                                   @selector(setName:))));
     
+    
     // Do any additional setup after loading the view.
 }
 
 - (void)dealloc {
-    [self.person removeObserver:self forKeyPath:@"name"];
-    [self.person removeObserver:self forKeyPath:@"age"];
+//    [self.person removeObserver:self forKeyPath:@"name"];
+//    [self.person removeObserver:self forKeyPath:@"age"];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -109,6 +129,9 @@ static void PrintDescription(NSString *name, id obj)
     }else {
         self.person.age = 1;
     }
+    
+//    self.person.firstName = @"iOS成长指北";
+//    self.person.lastName = @"iOS成长指北";
     
 }
 
